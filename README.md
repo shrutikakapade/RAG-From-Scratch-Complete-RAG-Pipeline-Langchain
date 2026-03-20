@@ -104,55 +104,86 @@ module focuses on one component of the RAG pipeline.
 
 <hr>
 
-<h2>Current Module</h2>
+<h2>📚 Notebook Overview – RAG Pipeline Implementation</h2>
 
 <p>
-The first module of this repository focuses on <b>Document Loaders</b>.
-</p>
-
-<p>
-Included Notebook:
-</p>
-
-<ul>
-<li><b>langchain_document_loaders_unstructured_practical_examples.ipynb</b></li>
-</ul>
-
-<p>
-This notebook demonstrates practical implementations of different types of 
-document loaders used in LangChain, including:
-</p>
-
-<ul>
-<li>Web-based document loaders</li>
-<li>CSV document loaders</li>
-<li>JSON document loaders</li>
-<li>Unstructured document loaders</li>
-</ul>
-
-<p>
-These loaders allow developers to ingest data from multiple sources and 
-prepare it for further processing within a RAG pipeline.
+This section provides a concise overview of each notebook, covering the complete 
+<b>Retrieval-Augmented Generation (RAG) pipeline</b> from data ingestion to vector storage and retrieval.
 </p>
 
 <hr>
 
-<h2>Upcoming Modules</h2>
-
-<p>
-Over the next updates, the repository will be expanded to include:
-</p>
-
 <ul>
-<li>Text Splitting Techniques</li>
-<li>Embedding Models</li>
-<li>Vector Databases</li>
-<li>Retrieval Mechanisms</li>
-<li>Complete End-to-End RAG Implementation</li>
+
+  <li>
+    <b>langchain_document_loaders_unstructured_practical_examples.ipynb</b>
+    <ul>
+      <li>Implements multiple LangChain document loaders (Web, CSV, JSON, Unstructured)</li>
+      <li>Demonstrates multi-source data ingestion</li>
+      <li>Prepares raw data for RAG pipeline processing</li>
+    </ul>
+  </li>
+
+  <br>
+
+  <li>
+    <b>01_rag_pdf_document_loaders_langchain_examples.ipynb</b>
+    <ul>
+      <li>Focuses on PDF data extraction using different loaders</li>
+      <li>Compares PyPDFLoader, PyMuPDFLoader, and UnstructuredPDFLoader</li>
+      <li>Handles complex formats like images, Word, and PowerPoint files</li>
+    </ul>
+  </li>
+
+  <br>
+
+  <li>
+    <b>Text_splitters_in_RAG_Pipeline.ipynb</b>
+    <ul>
+      <li>Explains text splitting in RAG systems</li>
+      <li>Breaks large documents into smaller chunks</li>
+      <li>Improves LLM performance and retrieval accuracy</li>
+    </ul>
+  </li>
+
+  <br>
+
+  <li>
+    <b>RAG_Retriever_Search.ipynb</b>
+    <ul>
+      <li>Implements loading, splitting, and embedding steps</li>
+      <li>Converts text into vector embeddings</li>
+      <li>Enables semantic similarity-based retrieval</li>
+    </ul>
+  </li>
+
+  <br>
+
+  <li>
+    <b>rag_multi_model_embeddings_faiss_ipynb.ipynb</b>
+    <ul>
+      <li>Builds an end-to-end RAG pipeline</li>
+      <li>Uses OpenAI, Gemini, and Hugging Face embeddings</li>
+      <li>Integrates FAISS for fast vector search</li>
+      <li>Explores EUCLIDEAN and COSINE similarity strategies</li>
+    </ul>
+  </li>
+
+  <br>
+
+  <li>
+    <b>huggingface_embeddings_to_chroma_vector_db.ipynb</b>
+    <ul>
+      <li>Uses HuggingFaceEmbeddings (MiniLM) for semantic search</li>
+      <li>Creates structured Document objects</li>
+      <li>Builds Chroma vector database using from_documents()</li>
+      <li>Performs CRUD operations on vector data</li>
+    </ul>
+  </li>
+
 </ul>
 
 <hr>
-
 <h2>Who Should Use This Repository?</h2>
 
 <ul>
